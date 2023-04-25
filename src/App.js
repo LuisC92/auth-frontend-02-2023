@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import { CurrentUserContextProvider } from "./context/UserContext";
 import ChangePassword from "./pages/ChangePassword";
+import ForgetPassword from "./pages/ForgetPassword";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/change-password" element={<ChangePassword />} />
+          <Route path="/forget-password" element={<ForgetPassword />} />
         </Routes>
       </CurrentUserContextProvider>
     </div>
